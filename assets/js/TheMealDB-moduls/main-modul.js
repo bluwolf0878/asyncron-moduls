@@ -1,10 +1,10 @@
 // main.js
 
 import { getRandomMeal, getMealById } from './TheMealDB.js'; // API-funktionerne
-import { renderRecipes, renderRecipeDetails } from './UI-modul.js'; // UI funktioner
+import { renderRecipes, renderRecipeDetails, } from './UI-modul.js'; // UI funktioner
 
 // Hent 10 tilfældige opskrifter
-const loadRandomRecipes = async () => {
+export const loadRandomRecipes = async () => {
   const randomRecipes = [];
 
   // Loop for at hente 10 tilfældige opskrifter
@@ -35,3 +35,4 @@ const showRecipeDetails = async (mealId) => {
 window.addEventListener('DOMContentLoaded', () => {
   loadRandomRecipes();
 });
+

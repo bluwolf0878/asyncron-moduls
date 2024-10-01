@@ -1,0 +1,82 @@
+/* Generel side styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: rgb(30, 60, 90); /* Mørkeblå baggrund */
+  color: white; /* Hvid tekst for kontrast */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* Styling af opskriftkort */
+.recipe {
+  width: 200px;
+  margin: 20px;
+  text-align: center;
+  cursor: pointer;
+  background-color: rgb(51, 102, 153); /* 30% lysere blå */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Let skygge for dybde */
+  transition: transform 0.3s, box-shadow 0.3s; /* Animation ved hover */
+}
+
+.recipe:hover {
+  transform: scale(1.05); /* Forstør ved hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Dybere skygge ved hover */
+}
+
+/* Billede styling inde i opskriftkortet */
+.recipe img {
+  width: 100%;
+  height: auto;
+  border-bottom: 2px solid rgb(30, 60, 90); /* Skillelinje i primærfarven */
+}
+
+/* Titel styling for opskrifterne */
+.recipe h3 {
+  padding: 10px 0;
+  color: white; /* Hvid tekst for titler */
+}
+
+/* Opskrift detaljer styling */
+.recipe-detail {
+  width: 100%;
+  text-align: center;
+  background-color: rgb(51, 102, 153); /* 30% lysere baggrund for opskrift detaljer */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Let skygge for dybde */
+}
+
+/* Styling af billeder i opskrift detaljer */
+.recipe-detail img {
+  max-width: 400px;
+  height: auto;
+  border: 2px solid rgb(30, 60, 90); /* Ramme omkring opskrift billede */
+}
+
+/* Styling af overskrifter i opskrift detaljer */
+.recipe-detail h2 {
+  color: white; /* Hvid overskrift */
+}
+
+/* Styling af beskrivelsen i opskrift detaljer */
+.recipe-detail p {
+  color: rgb(102, 153, 204); /* 60% lysere blå for beskrivelse */
+}
+#back-button {
+    background-color: rgb(30, 60, 90); /* Primær farve */
+    color: white; /* Hvid tekst */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px; /* Plads over knappen */
+    transition: background-color 0.3s; /* Animation ved hover */
+}
+
+#back-button:hover {
+    background-color: rgb(51, 102, 153); /* Lysere blå ved hover */
+}

@@ -16,7 +16,7 @@ const checkResponse = (response) => {
 // Fetch a meal by ID
 export const getMealById = (id) => {
   return fetch(`${BASE_URL}/lookup.php?i=${id}`)
-    .then(checkResponse)
+    .then(checkResponse) 
     .catch((error) => {
       console.error(`Failed to fetch meal with ID ${id}:`, error.message);
       throw error;
