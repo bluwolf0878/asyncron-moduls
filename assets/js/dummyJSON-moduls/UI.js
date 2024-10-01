@@ -1,4 +1,5 @@
 // ui.js
+import { loadAllProducts } from "./main.js";
 
 // Funktion til at oprette kortvisning af produkter
 export const renderProducts = (products, onClickHandler) => {
@@ -24,6 +25,14 @@ export const renderProducts = (products, onClickHandler) => {
   
     const productDetailDiv = document.createElement('div');
     productDetailDiv.classList.add('product-detail');
+
+    let back = document.createElement('button');
+    back.innerText = "tilbage til opskrifter"
+    
+    back.addEventListener('click', ()=>{
+      loadAllProducts()
+    })
+
     productDetailDiv.innerHTML = `
       <h2>${product.title}</h2>
       <img src="${product.thumbnail}" alt="${product.title}">
@@ -32,5 +41,6 @@ export const renderProducts = (products, onClickHandler) => {
     `;
     
     container.appendChild(productDetailDiv);
+    productDetailDiv.appendChild(back);
   };
   

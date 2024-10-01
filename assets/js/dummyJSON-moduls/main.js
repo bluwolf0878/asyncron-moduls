@@ -4,7 +4,7 @@ import { getAllProducts, getProductById } from './dummyJSON.js'; // API-funktion
 import { renderProducts, renderProductDetails } from './UI.js'; // UI funktioner
 
 // Hent og vis alle produkter
-const loadAllProducts = async () => {
+export const loadAllProducts = async () => {
   try {
     const productData = await getAllProducts();
     renderProducts(productData.products, showProductDetails);
